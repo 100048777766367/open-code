@@ -1,0 +1,15 @@
+name: Open-code Lifecycle
+on:
+  push:
+    branches: [ main ]
+permissions:
+  contents: write
+jobs:
+  run-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - run: python -B open-code_engine.py

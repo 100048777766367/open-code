@@ -1,0 +1,11 @@
+{
+    "contract_id": "bodhi.open-code.v1",
+    "identity": "100048777766367/open-code",
+    "archetype": "DATA_FOUNDRY",
+    "role": "CODE_AST_MICROSCOPE",
+    "network_partners": {
+        "storage": "100048777766367/storage",
+        "prev_stage": "100048777766367/open-file",
+        "next_stage": "100048777766367/tag"
+    }
+}
